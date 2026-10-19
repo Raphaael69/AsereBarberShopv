@@ -1,16 +1,36 @@
-# React + Vite
+# 💈 AsereBarberShop - Plataforma Web & Sistema de Reservas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web interactiva y responsiva desarrollada en **React + Vite + Bootstrap 5** para la barbería de estilo urbano industrial **AsereBarberShop**. El proyecto incluye catálogo unificado de servicios y productos, carrito de compras con persistencia, sistema de reservas de citas en línea y un panel de administración en tiempo real.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologías Utilizadas
 
-## React Compiler
+* **Frontend:** React 18, React Router DOM v6, Vite.
+* **Estilos & UI:** Bootstrap 5, Custom CSS Variables (Tema Industrial Matte Black `#0c0c0e` & Gold `#c5a059`), Google Fonts (Oswald & Montserrat).
+* **Persistencia de Datos:** `localStorage` (Gestión de estado del carrito, CRUD completo de productos/servicios y persistencia de citas agendadas).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Funcionalidades Principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Catálogo & Servicios Unificados:** Visualización y filtrado dinámico de cortes de cabello, rituales de barba, perfilado de cejas, combos VIP y productos de grooming.
+2. **Carrito de Compras:** Gestión de cantidad, suma de totales en tiempo real, vaciado y persistencia automática en `localStorage`.
+3. **Sistema de Reservas de Citas (`/reservas`):**
+   * Selección de servicios y paquetes VIP presenciales.
+   * Elección de barberos oficiales (Kevin Arraya / Rafael Miotta).
+   * Selección de fecha, hora y datos de contacto.
+   * Elección de modalidad de pago: **Pagar en el Local (Efectivo/Débito)** o **Pagar Online (Tarjeta/Webpay)**.
+4. **Panel de Administración (`/admin`):**
+   * Métricas generales del negocio.
+   * CRUD completo de productos y servicios (Crear, Editar, Eliminar, Destacar).
+   * Visualización, filtrado y cancelación de citas agendadas en tiempo real.
+5. **Manejo de Excepciones (404):** Captura de rutas no registradas (`path="*"`) con mensaje de control dedicado para la comisión de 13 evaluadores.
+
+---
+
+## ⚙️ Instalación y Ejecución Local
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/Raphaael69/AsereBarberShopv.git](https://github.com/Raphaael69/AsereBarberShopv.git)
